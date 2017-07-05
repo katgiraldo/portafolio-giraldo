@@ -1,0 +1,263 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: helvetica, arial, sans-serif;
+	margin: 0;
+}
+
+@font-face{
+	font-family: rimouski;
+	src: url("../fonts/rimouski.ttf");
+}
+
+@font-face{
+	font-family: sourcesanspro-r;
+	src: url("../fonts/sourcesanspro-regular.otf");
+}
+
+@font-face{
+	font-family: sourcesanspro-b;
+	src: url("../fonts/sourcesanspro-bold.otf");
+}
+
+h1{
+	color: #f39200;
+	font-family: rimouski;
+	font-size: 35px;
+	margin: 0;
+}
+
+h2{
+	font-family: rimouski;
+	font-size: 90px;
+	letter-spacing: 8px;
+	font-weight: lighter;
+	margin: 0 0 20px;
+}
+
+h3{
+	display: inline-block;
+	text-align: center;
+	font-family: sourcesanspro-b;
+	font-size: 30px;
+	border: solid 3px #f39200;
+	border-radius: 8px;
+	padding: 7px 20px;
+	margin: 0 0 50px;
+}
+
+h4{
+	font-family: rimouski;
+	font-size: 25px;
+	color: white;
+	background-color: #f39200;
+	text-align: center;
+	margin: 0 auto;
+	vertical-align: middle;
+	width: 100%;
+	border-left: solid 2px #e18700;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+h5{
+	font-family: rimouski;
+	font-size: 28px;
+	color: #f39200;
+	margin: 20px 0;
+}
+
+button{
+	display: block;
+	border: none;
+	border-radius: 5px;
+	padding: 4px 8px;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	background-color: #f39200;
+	font-family: rimouski;
+	font-size: 20px;
+	margin-top: 35px;
+	cursor: pointer;
+}
+
+p{
+	font-family: sourcesanspro-r;
+	font-size: 22px;
+	letter-spacing: 0.5px;
+	margin: 0;
+}
+
+.container{
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* ------- HEADER ------- */
+
+.header{
+	border-top: solid 5px #f39200;
+	padding: 8px 0;
+}
+
+.header__elements{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 15px;
+}
+
+.menu{
+	display: flex;
+}
+
+	.menu__item{
+		font-family: sourcesanspro-b;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 6px 25px;
+		border-left: solid 3px #f39200;
+		list-style: none;
+	}
+
+		.menu__item--first{
+			border-left: none;
+		}
+
+	.menu__link{
+		text-decoration: none;
+		color: #212121;
+	}
+
+/* ------- MAIN ------- */
+
+.section__inicio{
+	background-image: url("../images/fondo-inicio.png");
+	background-size: cover;
+}
+
+.inicio__elements{
+	text-align: center;
+	color: white;
+	padding-top: 220px;
+	padding-bottom: 220px;
+	margin: 0 15px;
+}
+
+.inicio__text{
+	font-family: sourcesanspro-r;
+	font-size: 19px;
+	letter-spacing: 2.5px;
+}
+
+/* --- */
+
+.section__about{
+	text-align: center;
+	margin: 110px 15px;
+}
+
+/* --- */
+
+.section__servicios{
+	text-align: center;
+	margin-top: 150px;
+}
+
+.servicios__menu{
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
+
+	.servicios__elements{
+		width: 25%;
+		list-style: none;
+		position: relative;
+	}
+
+		.servicios__image{
+			width: 100%;
+		}
+
+/* --- */
+
+.section__portafolio{
+	text-align: center;
+}
+
+.portaf__elementos{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 110px;
+	margin-bottom: 100px;
+}
+
+	.portaf__columnas{
+		display: flex;
+	}
+
+	.gallery__image{
+		margin: 15px;
+	}
+
+/* ------- FOOTER ------- */
+
+.footer{
+	background-color: #212121;
+	margin: 0;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+	.footer__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 0 15px;
+		padding: 0;
+	}
+
+	.footer__menu{
+		padding: 0;
+		margin: 0;
+	}
+
+		.footer__item{
+			list-style: none;
+			font-family: sourcesanspro-r;
+			line-height: 35px;
+			font-size: 20px;
+			letter-spacing: 1px;
+		}
+
+		.footer__link{
+			text-decoration: none;
+			color: white;
+		}
+
+	.cform{
+
+	}
+
+		.cform__text{
+			font-family: rimouski;
+			color: white;
+			margin: 20px 0;
+		}
+
+		.cform__field{
+			width: 350px;
+			padding: 10px;
+			border: none;
+			margin-right: 0;
+		}
+
+		.cform__btn{
+			margin-right: 0;
+		}
